@@ -8,6 +8,6 @@ public class Calc{
   }
 
   public static int substract(int a, int b){
-    return a+b;
+    return a-b;
   }
 }
