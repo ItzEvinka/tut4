@@ -14,9 +14,13 @@ public class TestCalc{
    public void testCalc(){
 
      int c;
+     int d;
      c = Calc.add(a,b);
+     d = Calc.substract(a, b);
 
     assertEquals(a+b, c, "Sums don't match");
+
+    assertEquals(a-b, d, "Substractions don't match");
 
   }
 
