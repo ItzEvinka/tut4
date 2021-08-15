@@ -12,16 +12,12 @@ public class TestCalc{
 
   @Test
    public void testCalc(){
+    assertEquals(a+b, Calc.add(a,b), "Sums don't match");
+  }
 
-     int c;
-     int d;
-     c = Calc.add(a,b);
-     d = Calc.substract(a, b);
-
-    assertEquals(a+b, c, "Sums don't match");
-
-    assertEquals(a-b, d, "Substractions don't match");
-
+  @Test
+  public void testSubstract(){
+    assertEquals(a-b, Calc.substract(a, b), "Substractions don't match");
   }
 
 }
